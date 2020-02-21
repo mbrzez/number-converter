@@ -14,7 +14,10 @@ public class ConverterArguments {
                 Arguments.of("MDCX", 1610),
                 Arguments.of("LXXI", 71),
                 Arguments.of("XXXVIII", 38),
-                Arguments.of("MCCCXXVII", 1327)
+                Arguments.of("MCCCXXVII", 1327),
+                Arguments.of("MCDXXIV", 1424),
+                Arguments.of("CDXCIV", 494),
+                Arguments.of("XLIX", 49)
         );
     }
 }

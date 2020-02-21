@@ -9,8 +9,8 @@ public class Roman2ArabicConverterTest {
     @ParameterizedTest
     @MethodSource("pl.brzezins.arguments.ConverterArguments#convertTestArgs")
     void convertTest(String romanNumber, int arabicNumber ) {
-        Arabic2RomanConverter arabicConverter = new Arabic2RomanConverter();
+        Roman2ArabicConverter romanConverter = new Roman2ArabicConverter();
 
-        assertEquals(arabicConverter.convert(arabicNumber), romanNumber);
+        assertEquals(arabicNumber, romanConverter.convert(romanNumber));
     }
 }
