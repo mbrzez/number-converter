@@ -7,13 +7,12 @@ public class Roman2ArabicConverter implements NumberConverter<Integer, String> {
         int result = 0;
         int current = 0;
         int next = 0;
-        int len = number.length();
         int position = 0;
 
-        while (position < len) {
+        while (position < number.length()) {
             current = RomanLiteral.getValueOfChar(number.charAt(position));
 
-            if (position + 1 < len) {
+            if (position + 1 < number.length()) {
                 next = RomanLiteral.getValueOfChar(number.charAt(position + 1));
 
                 if (current >= next) {
