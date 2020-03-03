@@ -13,7 +13,19 @@ public enum RomanLiteral {
         return value;
     }
 
+    public static int getValueOfString(String c) {
+        return RomanLiteral.valueOf(c).getValue();
+    }
+
     public static int getValueOfChar(char c) {
-        return RomanLiteral.valueOf(Character.toString(c)).getValue();
+        return RomanLiteral.getValueOfString(Character.toString(c));
+    }
+
+    public static RomanLiteral getByValue(int value) {
+        for(RomanLiteral literal : RomanLiteral.values()) {
+            if (literal.getValue() == value) return literal;
+        }
+
+        throw new IllegalArgumentException("Literal not found for current number");
     }
 }
