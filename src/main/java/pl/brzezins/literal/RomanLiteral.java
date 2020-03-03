@@ -28,4 +28,8 @@ public enum RomanLiteral {
 
         throw new IllegalArgumentException("Literal not found for current number");
     }
+
+    public String getRoman() {
+        return this.toString();
+    }
 }

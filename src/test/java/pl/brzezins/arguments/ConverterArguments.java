@@ -7,6 +7,7 @@ import java.util.stream.Stream;
 public class ConverterArguments {
     private static Stream<Arguments> convertTestArgs() {
         return Stream.of(
+                Arguments.of("", 0),
                 Arguments.of("MCMXCIX", 1999),
                 Arguments.of("MMXLV", 2045),
                 Arguments.of("CDLXXVII", 477),
